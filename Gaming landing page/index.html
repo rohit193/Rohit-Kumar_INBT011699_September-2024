@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpicRose - Dark Cyberpunk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section (Fixed) -->
+    <header id="navbar" class="fixed-header">
+        <div class="nav-content">
+            <div class="logo-container">
+                <img src="images/Logo.png" alt="EpicRose Logo" class="logo">
+                <span class="page-name">EpicRose</span>
+            </div>
+            <nav class="nav-bar">
+                <a href="#game-bio" class="nav-link">Game Bio</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#newsletter" class="nav-link">Newsletter</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Dynamic Hero) -->
+    <section class="hero" style="background-image: url('images/background.webp');">
+        <div class="hero-overlay">
+            <h1 class="hero-title" id="hero-title">Welcome to the Shadows</h1>
+            <p class="hero-subtitle" id="hero-subtitle">A world where every street tells a story</p>
+        </div>
+    </section>
+    
+    <section id="game-bio" class="section game-bio-section">
+        <h2 class="section-title bio-title">EpicRose: The Game</h2>
+        <div class="game-bio-content">
+            <div class="bio-part bio-grid">
+                <div class="bio-image-container">
+                    <img src="images/game1.webp" class="bio-image">
+                </div>
+                <div class="bio-text-container">
+                    <h3 class="bio-subtitle">A City Drenched in Neon</h3>
+                    <p class="section-text">
+                        EpicRose takes you into the heart of a sprawling, dystopian metropolis. The streets glow with neon, but beneath the surface, the city is decaying. Corruption runs deep, and the line between allies and enemies blurs with every step. Here, every action has consequences, and survival is only guaranteed to those who can adapt. <span class="highlight">Trust no one. Survive by any means.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="bio-part bio-grid">
+                <div class="bio-image-container">
+                    <img src="images/game2.webp" class="bio-image">
+                </div>
+                <div class="bio-text-container">
+                    <h3 class="bio-subtitle">Uncover the Secrets</h3>
+                    <p class="section-text">
+                        As you navigate through the underbelly of the city, you'll uncover a world teetering on the edge of collapse. Hidden factions fight for power in the shadows, and the city's artificial intelligence watches your every move. <span class="highlight">Your decisions will shape the fate of the city.</span> Will you choose to ignite the revolution or exploit the chaos for your own gain?
+                    </p>
+                </div>
+            </div>
+            <div class="bio-part bio-grid">
+                <div class="bio-image-container">
+                    <img src="images/game3.webp" class="bio-image">
+                </div>
+                <div class="bio-text-container">
+                    <h3 class="bio-subtitle">Battle for Control</h3>
+                    <p class="section-text">
+                        Whether alone or with others, every mission brings you closer to domination—or destruction. Form alliances, build your reputation, and engage in brutal combat with rival gangs and corrupt corporate enforcers. <span class="highlight">The streets will never be safe, but they can be yours.</span> In this world, power isn't just taken—it's earned.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="benefits" class="section bg-dark">
+        <h2 class="section-title">Key Features & Benefits</h2>
+        <div class="benefits-grid">
+            <div class="benefit-item">
+                <div class="benefit-icon-container">
+                    <img src="images/benefits1.webp" alt="Graphics" class="benefit-icon">
+                </div>
+                <p class="benefit-text">Cinematic Graphics</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon-container">
+                    <img src="images/benefits2.webp" alt="Multiplayer" class="benefit-icon">
+                </div>
+                <p class="benefit-text">Multiplayer Skirmishes</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon-container">
+                    <img src="images/benefits3.webp" alt="Rewards" class="benefit-icon">
+                </div>
+                <p class="benefit-text">Unique In-game Rewards</p>
+            </div>
+            <div class="benefit-item">
+                <div class="benefit-icon-container">
+                    <img src="images/benefits4.webp" alt="Cross-platform" class="benefit-icon">
+                </div>
+                <p class="benefit-text">Cross-platform Compatibility</p>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Testimonials Section (with dynamic rotating testimonials) -->
+<section id="testimonials" class="section">
+    <h2 class="section-title">What Players are Saying</h2>
+    <div id="testimonials-carousel" class="testimonial-carousel">
+        <blockquote class="testimonial" id="testimonial">
+            <p class="testimonial-text">"EpicRose drops you in a world that feels alive, gritty, and full of surprises. Every corner hides a new challenge."</p>
+            <cite class="testimonial-author" id="testimonial-author">— Ash R., Cybernetic Mercenary</cite>
+        </blockquote>
+    </div>
+    <div class="carousel-controls">
+        <button class="prev-btn" onclick="prevTestimonial()">&#10094;</button>
+        <button class="next-btn" onclick="nextTestimonial()">&#10095;</button>
+    </div>
+</section>
+
+<section id="newsletter" class="newsletter-section">
+    <div class="newsletter-content">
+        <h2 class="newsletter-title">Stay Connected & Unlock Exclusive Rewards!</h2>
+        <p class="newsletter-text">
+            Join our newsletter to receive the latest news, updates, and special offers. As a welcome gift, enjoy a discount code or free sample!
+        </p>
+        <form class="newsletter-form" action="your-newsletter-endpoint" method="post">
+            <input type="text" class="newsletter-input name-input" placeholder="Your Name" required>
+            <input type="email" class="newsletter-input email-input" placeholder="Your Email" required>
+            <button type="submit" class="newsletter-btn">Subscribe Now</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Contact Information Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-text">
+            Have questions? Contact us at <a href="mailto:indrarohit01@gmail.com" class="contact-link">indrarohit01@gmail.com</a>.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 EpicRose. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
