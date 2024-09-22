@@ -1,1 +1,1 @@
-# Rohit-Kumar_INBT011699_September-2024
+# These projects are created for the iNeuBytes Virtual Internship Program [September, 2024]
