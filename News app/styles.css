@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+#newsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+#loadMoreBtn {
+    margin-top: 20px;
+}
